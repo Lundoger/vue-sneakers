@@ -4,6 +4,8 @@
 
 :root {
   --bgWhite: #f3f4ee;
+  --gray: #9d9d9d;
+  --textGray: #5c5c5c;
 }
 
 body.lock {
@@ -25,7 +27,7 @@ body.lock {
 
 @layer components {
   .container {
-    @apply mx-auto w-full max-w-[1920px] px-[20px] md:px-[64px] lg:px-[64px] xl:px-[80px] 2xl:px-[120px];
+    @apply mx-auto max-w-[1280px] px-4;
   }
   .basic-transition {
     @apply transition-all duration-300 ease-in;

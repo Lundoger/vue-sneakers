@@ -1,8 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeaderComponent from './components/HeaderComponent.vue'
+</script>
 
 <template>
   <div class="wrapper">
-    <h1 class="text-5xl">Hello world</h1>
+    <HeaderComponent />
   </div>
 </template>
 
