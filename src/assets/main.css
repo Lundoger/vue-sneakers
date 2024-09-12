@@ -4,69 +4,6 @@
 
 :root {
   --bgWhite: #f3f4ee;
-  --bgViolet: #edebf5;
-  --bgVioletTransparent: rgba(237, 235, 245, 0.5);
-  --bgYellow: rgba(255, 171, 11, 0.15);
-  --beige: #fff6c5;
-  --violet: #6b5ad1;
-  --lightViolet: #958ac4;
-  --mainViolet: #50439f;
-  --darkGrey: #4d4d4d;
-  --btnDisabledBg: #e3e3e4;
-  --btnDisabledText: #97979a;
-  --lightVioletSecond: #cac4e2;
-  --textViolet: #2f245e;
-  --red: #e93405;
-  --yellow: rgb(255, 171, 11);
-  --yellowTransparent: rgba(255, 171, 11, 0.85);
-  --blueOverlayGradient: linear-gradient(
-    330deg,
-    rgba(80, 67, 159, 0.45) -42.77%,
-    rgba(166, 215, 230, 0.75) -37.54%,
-    rgba(47, 36, 94, 0.75) 73.17%
-  );
-  --redOverlayGradient: linear-gradient(
-    330deg,
-    rgba(233, 52, 5, 0.45) -43.69%,
-    rgba(233, 52, 5, 0.75) -32.92%,
-    rgba(47, 36, 94, 0.75) 100.61%
-  );
-  --yellowOverlayGradient: linear-gradient(
-    330deg,
-    rgba(255, 171, 11, 0.45) -43.69%,
-    rgba(255, 171, 11, 0.75) -32.92%,
-    rgba(47, 36, 94, 0.75) 100.61%
-  );
-  --blueCardGradient: linear-gradient(
-    330deg,
-    rgba(80, 67, 159, 0.45) -43.69%,
-    rgba(80, 67, 159, 0.75) -32.92%,
-    rgba(80, 67, 159, 0.6) 100.61%
-  );
-
-  --redCardGradient: linear-gradient(
-    330deg,
-    rgba(233, 52, 5, 0.45) -43.69%,
-    rgba(233, 52, 5, 0.75) -32.92%,
-    rgba(233, 52, 5, 0.6) 100.61%
-  );
-  --yellowCardGradient: linear-gradient(
-    330deg,
-    rgba(255, 171, 11, 0.45) -43.69%,
-    rgba(255, 171, 11, 0.75) -32.92%,
-    rgba(255, 171, 11, 0.6) 100.61%
-  );
-}
-
-html,
-body {
-  scroll-behavior: smooth;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
 body.lock {
@@ -84,19 +21,6 @@ body.lock {
 
 .wrapper > main {
   flex: 1 1 auto;
-}
-
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .text-balance {
-    text-wrap: balance;
-  }
 }
 
 @layer components {
