@@ -30,6 +30,6 @@ body.lock {
     @apply mx-auto max-w-[1280px] px-4;
   }
   .basic-transition {
-    @apply transition-all duration-300 ease-in;
+    @apply transition-all duration-200 ease-in;
   }
 }
