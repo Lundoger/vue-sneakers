@@ -2,6 +2,10 @@
 import HeaderComponent from './components/HeaderComponent.vue'
 import CartModal from './components/modals/card-modal/CartModal.vue'
 import SneakersList from './components/SneakersList.vue'
+
+const onClose = () => {
+  alert(123)
+}
 </script>
 
 <template>
@@ -15,6 +19,6 @@ import SneakersList from './components/SneakersList.vue'
         </div>
       </section>
     </main>
-    <CartModal />
+    <CartModal v-on:close="onClose" />
   </div>
 </template>
