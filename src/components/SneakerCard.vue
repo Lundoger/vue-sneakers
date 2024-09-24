@@ -32,7 +32,7 @@ defineProps<{
     <div class="flex justify-between gap-3">
       <div class="flex flex-col gap-2 leading-[1]">
         <span class="text-primaryGray">Цена:</span>
-        <span class="font-bold">{{ price }}</span>
+        <span class="font-bold">{{ price }} грн.</span>
       </div>
       <button
         @click="onClickAdd"

@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import SneakerCard from './SneakerCard.vue'
 
+defineProps<{
+  items: any[]
+}>()
+
 const onCLickAdd = () => {
   alert(111)
 }
@@ -10,11 +14,13 @@ const onCLickFavorite = () => {
 </script>
 
 <template>
-  <ul class="grid grid-cols-5 gap-6">
+  <ul class="grid grid-cols-4 gap-6">
     <SneakerCard
-      image-url="/sneakers/sneakers-11.jpg"
-      title="Krossivki top"
-      price="9999 uah"
+      v-for="item in items"
+      :key="item.id"
+      :image-url="item.imageUrl"
+      :title="item.title"
+      :price="item.price"
       :is-added="false"
       :is-liked="true"
       v-on:click-add="onCLickAdd"
